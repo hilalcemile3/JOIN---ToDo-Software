@@ -37,7 +37,7 @@ body {
 
 .sidebar-categories {
     display: flex;
-    
+
 }
 
 .sidebar nav ul {
@@ -69,7 +69,7 @@ body {
 }
 
 header {
-    background-color:white;
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -88,12 +88,12 @@ header {
 
 header h1 {
     font-size: 20px;
-    font-weight:normal;
+    font-weight: normal;
 }
 
 .header-right {
     display: flex;
-        align-items: center;
+    align-items: center;
 }
 
 
@@ -106,9 +106,9 @@ header h1 {
     display: flex;
     background-color: white;
     width: 56px;
-	height: 56px;
-	border-radius: 50%;
-	text-align: center;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
     border: 3px solid #2A3647;
     gap: 16px;
 }
@@ -119,15 +119,35 @@ header h1 {
     font-weight: bold;
 }
 
-
-/* FOLLOWING SETTINGS AT THE MOMENT NOT IN USE:*/
-
 main {
     flex: 1;
     background-color: #F4F4F4;
     padding: 20px;
 }
 
+.contacts-container {
+    position: relative;
+    top: 140px;
+}
+
+.contacts-list {
+    width: 456px;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    gap: 16px;
+    width:352px;
+    height: 56px;
+    border-radius: 10px;
+    background: rgba(42, 54, 71, 1);
+
+}
+
+/* FOLLOWING SETTINGS AT THE MOMENT NOT IN USE:*/
 
 .search-bar {
     display: flex;
