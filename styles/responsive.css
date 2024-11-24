@@ -1,0 +1,79 @@
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .sidebar nav ul li {
+        margin: 5px 0;
+    }
+
+    .sidebar footer {
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .kanban-board {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .kanban-column {
+        flex: none;
+    }
+
+    .add-task-btn {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kanban-card {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .kanban-column h2 {
+        font-size: 16px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    button.cancel-task {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    button.save-task {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 1920px) {
+    main {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}
