@@ -125,7 +125,8 @@ main {
 }
 
 .contacts-container {
-
+    display: flex;
+    align-items: center;
     position: relative;
     top: 140px;
 }
@@ -145,7 +146,7 @@ main {
     padding-top: 12px;
     padding-bottom: 12px;
     gap: 16px;
-    width:352px;
+    width: 352px;
     height: 56px;
     border-radius: 10px;
     background: rgba(42, 54, 71, 1);
@@ -156,10 +157,31 @@ main {
     color: white;
 }
 
+.contacts-area-button {
+    width: 456px;
+    height: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .addcontact-logo {
     width: 32px;
     height: 32px;
 }
+
+.contacts-details-header {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-line {
+    width: 3px;
+    height: 59px;
+    background-color: rgba(41, 171, 226, 1);
+    margin: 0 auto;
+}
+
 
 /* FOLLOWING SETTINGS AT THE MOMENT NOT IN USE:*/
 
