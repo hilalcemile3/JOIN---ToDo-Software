@@ -11,19 +11,21 @@ body {
 }
 
 .sidebar {
-    background-color: #2A2A2A;
+    background-color: #2A3647;
     color: white;
-    width: 250px;
+    width: 232px;
+    height: 1024px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
-.sidebar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.sidebar-logo {
+    width: 100px;
+    height: 122 px;
 }
 
 .sidebar nav ul {
@@ -49,7 +51,7 @@ body {
 
 .sidebar footer a {
     color: #aaa;
-    font-size: 12px;
+    font-size: 16px;
     display: block;
     margin: 5px 0;
 }
