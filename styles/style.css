@@ -122,21 +122,26 @@ header h1 {
 main {
     flex: 1;
     background-color: #F4F4F4;
-    padding: 20px;
 }
 
 .contacts-container {
+
     position: relative;
     top: 140px;
 }
 
 .contacts-list {
     width: 456px;
+    height: 928px;
     display: flex;
     justify-content: center;
+    background-color: white;
 }
 
 .contacts-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 12px;
     padding-bottom: 12px;
     gap: 16px;
@@ -144,7 +149,16 @@ main {
     height: 56px;
     border-radius: 10px;
     background: rgba(42, 54, 71, 1);
+    cursor: pointer;
+}
 
+.contacts-button h2 {
+    color: white;
+}
+
+.addcontact-logo {
+    width: 32px;
+    height: 32px;
 }
 
 /* FOLLOWING SETTINGS AT THE MOMENT NOT IN USE:*/
