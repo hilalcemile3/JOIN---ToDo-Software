@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: inter;
+    src: url(../assets/fonts/inter.ttf);
+}
+
+body {
+  font-family: inter;
+  margin: 0;
+  padding: 0 80px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 61px;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 27px;
+}
+
+h3 {
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.lightblue {
+  color: #29abe2;
+}
