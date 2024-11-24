@@ -1,3 +1,21 @@
+function init() {
+    loadSidebarAndHeader();
+}
+
+async function loadSidebarAndHeader() {
+    const sidebarContent = await fetch('./assets/templates/sidebar.html').then(res => res.text());
+    document.getElementById('sidebar-container').innerHTML = sidebarContent;
+
+    const headerContent = await fetch('./assets/templates/header.html').then(res => res.text());
+    document.getElementById('header-container').innerHTML = headerContent;
+}
+
+
+
+
+
+/* FOLLOWING SETTINGS AT THE MOMENT NOT IN USE:*/
+
 document.addEventListener("DOMContentLoaded", () => {
     const addTaskButton = document.querySelector(".add-task-btn");
     const taskModal = document.getElementById("task-modal");
@@ -5,18 +23,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const taskForm = document.getElementById("task-form");
 
     // Open the modal when Add Task is clicked
-    addTaskButton.addEventListener("click", () => { 
-        taskModal.classList.remove("hidden"); 
+    addTaskButton.addEventListener("click", () => {
+        taskModal.classList.remove("hidden");
     });
 
     // Close the modal when Cancel is clicked
     cancelTaskButton.addEventListener("click", () => {
-        taskModal.classList.add("hidden"); 
+        taskModal.classList.add("hidden");
     });
 
     // Add task to the board
     taskForm.addEventListener("submit", (e) => {
-        e.preventDefault(); 
+        e.preventDefault();
         const title = document.getElementById("task-title").value;
         const description = document.getElementById("task-description").value;
         const dueDate = document.getElementById("task-due-date").value;
@@ -25,8 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const newTask = createTaskElement(title, description, dueDate, priority);
         document.querySelector('[data-status="to-do"] .kanban-cards').appendChild(newTask);
 
-        taskModal.classList.add("hidden"); 
-        taskForm.reset(); 
+        taskModal.classList.add("hidden");
+        taskForm.reset();
     });
 });
 
