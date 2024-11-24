@@ -19,10 +19,30 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#" class="nav-link">Summary</a></li>
-                    <li><a href="#" class="nav-link">Add Task</a></li>
-                    <li class="active"><a href="#" class="nav-link">Board</a></li>
-                    <li><a href="#" class="nav-link">Contacts</a></li>
+                    <li>
+                        <div class="sidebar-categories">
+                            <img class="sidebar-icons" src="../icons/summary.png" alt="Summary Icon">
+                            <a href="#" class="nav-link">Summary</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sidebar-categories">
+                            <img class="sidebar-icons" src="../icons/addtask.png" alt="Add Task Icon">
+                            <a href="#" class="nav-link">Add Task</a>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <div class="sidebar-categories">
+                            <img class="sidebar-icons" src="../icons/board.png" alt="Board Icon">
+                            <a href="#" class="nav-link">Board</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sidebar-categories">
+                            <img class="sidebar-icons" src="../icons/contacts.png" alt="Contacts Icon">
+                            <a href="#" class="nav-link">Contacts</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <footer>
@@ -34,74 +54,14 @@
         <!-- Main Content -->
         <main>
             <header>
-                <h1>Board</h1>
-                <div class="search-bar">
-                    <input id="search-task" type="text" placeholder="Find Task">
-                    <button>🔍</button>
-                </div>
-                <button class="add-task-btn">Add Task +</button>
+                <h1>Kanban Project Management Tool</h1>
+                <img href="#" class="help" src="../icons/help.png" alt="Help Icon">
+
+
+
+
             </header>
 
-            <!-- Kanban board layout with columns -->
-            <section class="kanban-board">
-
-                <div class="kanban-column" data-status="to-do">
-                    <h2>To Do</h2>
-                    <button class="add-column-task">+</button>
-                    <div class="kanban-cards"></div>
-                </div>
-
-                <div class="kanban-column" data-status="in-progress">
-                    <h2>In Progress</h2>
-                    <button class="add-column-task">+</button>
-                    <div class="kanban-cards"></div>
-                </div>
-
-                <div class="kanban-column" data-status="await-feedback">
-                    <h2>Await Feedback</h2>
-                    <button class="add-column-task">+</button>
-                    <div class="kanban-cards"></div>
-                </div>
-
-                <div class="kanban-column" data-status="done">
-                    <h2>Done</h2>
-                    <button class="add-column-task">+</button>
-                    <div class="kanban-cards"></div>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <!-- Modal for creating or editing tasks -->
-    <div id="task-modal" class="modal hidden">
-        <div class="modal-content">
-            <h2>Add/Edit Task</h2>
-            <form id="task-form">
-
-                <label for="task-title">Title</label>
-                <input type="text" id="task-title" required>
-
-                <label for="task-description">Description</label>
-                <textarea id="task-description"></textarea>
-
-                <label for="task-due-date">Due Date</label>
-                <input type="date" id="task-due-date" required>
-
-                <label for="task-priority">Priority</label>
-                <select id="task-priority">
-                    <option value="urgent">Urgent</option>
-                    <option value="medium" selected>Medium</option>
-                    <option value="low">Low</option>
-                </select>
-
-                <label for="task-assignees">Assignees</label>
-                <input type="text" id="task-assignees" placeholder="Enter names">
-
-                <button type="submit" class="save-task">Save Task</button>
-                <button type="button" class="cancel-task">Cancel</button>
-            </form>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>

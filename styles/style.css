@@ -28,6 +28,16 @@ body {
     height: 122 px;
 }
 
+.sidebar-icons {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar-categories {
+    display: flex;
+    
+}
+
 .sidebar nav ul {
     list-style: none;
     padding: 0;
@@ -38,7 +48,7 @@ body {
 }
 
 .sidebar nav ul li a {
-    color: white;
+    color: #CDCDCD;
     text-decoration: none;
     display: block;
     padding: 10px;
